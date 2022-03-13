@@ -1,0 +1,11 @@
+def tableau_trie(t1,t2):
+      tableau_retour=list()
+      e=0
+      for a in range (lent(t1)):
+         while t2[e] < t1 [a]:
+                 tableau_retour.append(t2[e])
+                 e+=1
+         tableau_retour.append(t1[a])
+       tableau_retour +=t2[e:]
+
+       retour tableau_retour
