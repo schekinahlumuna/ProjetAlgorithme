@@ -1,1 +1,8 @@
+from cmath import sqrt
 
+def intersection_cercle(x1,y1,x2,y2,r1,r2):
+    d=sqrt((x2-x1)**2 + (y2-y1)**2)
+    if (r1-r2) < d < (r1+r2):
+        return True
+    return False
+#cet algorithme a complexite 
