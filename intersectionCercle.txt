@@ -1,0 +1,24 @@
+fonction intersection_cercle(r1:Réel, r2:Réel):Réel
+Réel x1,y1,x2,y2, d;
+DEBUT
+   d = sqrt((x2-x1) **2 + (y2-y1)**2)
+	si (r1-r2) < d < (r1+r1) alors
+		retourner 1
+	sinon
+		retourne 0
+	finsi
+FIN
+
+-------------------------------------------------------------------------------
+
+def tableau_trie(t1,t2):
+      tableau_retour=list()
+      e=0
+      for a in range (lent(t1)):
+         while t2[e] < t1 [a]:
+                 tableau_retour.append(t2[e])
+                 e+=1
+         tableau_retour.append(t1[a])
+       tableau_retour +=t2[e:]
+
+       retour tableau_retour
